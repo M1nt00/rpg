@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
+    "build:play": "npm run build && node tools/inline.mjs play.html",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"

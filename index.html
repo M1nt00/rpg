@@ -9,6 +9,18 @@
   </head>
   <body>
     <div id="screen" class="screen"></div>
+    <script id="dev-guard">
+      // 이 index.html은 Vite 개발 서버용이에요. 파일을 직접 열면 안내를 보여 줍니다.
+      if (location.protocol === 'file:' || /github\.com$/.test(location.hostname)) {
+        document.body.style.cssText = 'margin:0;background:#14151f;color:#ece9f4;font-family:sans-serif';
+        document.getElementById('screen').innerHTML =
+          '<div style="max-width:560px;margin:15vh auto;padding:24px;line-height:1.7">' +
+          '<h1 style="color:#e9c46a">다섯 원소의 계승자</h1>' +
+          '<p>이 파일은 개발용이라 바로 열면 실행되지 않아요.</p>' +
+          '<p><b>play.html</b> 파일을 여세요. 더블클릭만으로 실행돼요.</p>' +
+          '<p style="color:#9a98ad">개발할 때는 <code>npm install</code> → <code>npm run dev</code></p></div>';
+      }
+    </script>
     <div id="modal-layer"></div>
     <div id="toast-layer" aria-live="polite"></div>
     <script type="module" src="/src/main.ts"></script>

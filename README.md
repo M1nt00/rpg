@@ -6,12 +6,18 @@
 - 플랫폼: 웹 브라우저 (PC 우선, 모바일 터치 대응)
 - 기술: HTML + CSS + TypeScript (Vite), 엔진·외부 에셋 없음 (그림은 SVG, 효과음은 Web Audio 합성)
 
-## 실행
+## 바로 플레이
+
+리포에 있는 **`play.html`** 을 브라우저로 열면 바로 실행돼요(더블클릭 OK, 설치 불필요).
+`index.html`은 개발 서버용이라 직접 열면 실행되지 않아요.
+
+## 개발
 
 ```bash
 npm install
 npm run dev        # 개발 서버 (http://localhost:5173)
 npm run build      # dist/ 에 정적 파일 생성 (어느 정적 호스팅에 올려도 동작)
+npm run build:play # 빌드 후 한 파일짜리 play.html 다시 만들기 (코드 수정 후 실행)
 npm test           # 전투 엔진·데이터 테스트
 ```
 
