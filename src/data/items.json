@@ -1,0 +1,58 @@
+{
+  "items": [
+    { "id": "potion", "name": "포션", "kind": "consumable", "desc": "HP 120 회복.", "price": 30, "use": { "target": "ally", "heal": 120 } },
+    { "id": "hipotion", "name": "상급 포션", "kind": "consumable", "desc": "HP 50% + 150 회복.", "price": 140, "use": { "target": "ally", "healPct": 0.5, "heal": 150 } },
+    { "id": "ether", "name": "에테르", "kind": "consumable", "desc": "MP 40 회복.", "price": 70, "use": { "target": "ally", "mp": 40 } },
+    { "id": "panacea", "name": "만능약", "kind": "consumable", "desc": "모든 상태이상 해제.", "price": 40, "use": { "target": "ally", "cleanse": true } },
+    { "id": "feather", "name": "부활의 깃털", "kind": "consumable", "desc": "전투불능인 아군을 HP 40%로 부활.", "price": 220, "use": { "target": "dead_ally", "revive": 0.4 } },
+    { "id": "stone_fire", "name": "원소석(불)", "kind": "consumable", "desc": "적에게 불 원소를 부착하고 소량 피해. 반응 준비용.", "price": 40, "battleOnly": true, "use": { "target": "enemy", "element": "fire", "damage": 0.6 } },
+    { "id": "stone_water", "name": "원소석(물)", "kind": "consumable", "desc": "적에게 물 원소를 부착하고 소량 피해. 반응 준비용.", "price": 40, "battleOnly": true, "use": { "target": "enemy", "element": "water", "damage": 0.6 } },
+    { "id": "stone_wind", "name": "원소석(바람)", "kind": "consumable", "desc": "적에게 바람 원소를 부착하고 소량 피해. 반응 준비용.", "price": 40, "battleOnly": true, "use": { "target": "enemy", "element": "wind", "damage": 0.6 } },
+    { "id": "stone_earth", "name": "원소석(땅)", "kind": "consumable", "desc": "적에게 땅 원소를 부착하고 소량 피해. 반응 준비용.", "price": 40, "battleOnly": true, "use": { "target": "enemy", "element": "earth", "damage": 0.6 } },
+    { "id": "stone_lightning", "name": "원소석(번개)", "kind": "consumable", "desc": "적에게 번개 원소를 부착하고 소량 피해. 반응 준비용.", "price": 40, "battleOnly": true, "use": { "target": "enemy", "element": "lightning", "damage": 0.6 } },
+
+    { "id": "enh_stone", "name": "강화석", "kind": "material", "desc": "장비 강화 재료 (+1 ~ +5).", "price": 30 },
+    { "id": "enh_stone_hi", "name": "상급 강화석", "kind": "material", "desc": "장비 강화 재료 (+6 ~ +10).", "price": 120 },
+    { "id": "ember_ore", "name": "잿불 광석", "kind": "material", "desc": "잿빛 평원의 몬스터가 품고 있는 뜨거운 광석.", "price": 15 },
+    { "id": "mist_pearl", "name": "안개 진주", "kind": "material", "desc": "물안개 호수에서 나는 뿌연 진주.", "price": 25 },
+    { "id": "storm_feather", "name": "폭풍 깃털", "kind": "material", "desc": "바람의 협곡 새들이 떨군 깃털.", "price": 35 },
+    { "id": "thunder_crystal", "name": "뇌정석", "kind": "material", "desc": "번개를 머금은 결정.", "price": 45 },
+    { "id": "deep_gem", "name": "심연 보석", "kind": "material", "desc": "대지의 심연 깊은 곳의 보석.", "price": 55 },
+
+    { "id": "medicine_box", "name": "약상자", "kind": "key", "desc": "안개나루 약사가 맡긴 약상자. 호숫가 오두막에 전달하자.", "price": 0 },
+    { "id": "mine_letter", "name": "광부의 편지", "kind": "key", "desc": "돌망치 성채의 광부가 갱도 아래 동료에게 보내는 편지.", "price": 0 }
+  ],
+  "legendaries": [
+    { "id": "lg_steam_blade", "name": "증기의 대검", "slot": "weapon", "weaponType": "sword", "element": "water", "tier": 2,
+      "stats": { "atk": 26 }, "options": [{ "stat": "atkPct", "value": 8 }, { "stat": "crt", "value": 6 }],
+      "unique": { "key": "react_vaporize", "value": 0.5, "desc": "증발 반응 피해 +50%" } },
+    { "id": "lg_mist_staff", "name": "안개 마녀의 지팡이", "slot": "weapon", "weaponType": "staff", "element": "water", "tier": 3,
+      "stats": { "mag": 36, "atk": 6 }, "options": [{ "stat": "magPct", "value": 10 }, { "stat": "mpPct", "value": 12 }],
+      "unique": { "key": "breakMp", "value": 30, "desc": "적을 브레이크시키면 MP 30 회복" } },
+    { "id": "lg_storm_bow", "name": "폭풍깃 활", "slot": "weapon", "weaponType": "bow", "element": "wind", "tier": 4,
+      "stats": { "atk": 44, "crt": 6 }, "options": [{ "stat": "spd", "value": 8 }, { "stat": "atkPct", "value": 10 }],
+      "unique": { "key": "firstStrike", "value": 1, "desc": "전투 시작 시 즉시 행동" } },
+    { "id": "lg_thunder_ring", "name": "뇌신의 반지", "slot": "accessory", "tier": 5,
+      "stats": { "mag": 20, "atk": 20 }, "options": [{ "stat": "magPct", "value": 10 }, { "stat": "reactionPct", "value": 10 }],
+      "unique": { "key": "react_electro", "value": 0.6, "desc": "감전 반응 피해 +60%" } },
+    { "id": "lg_king_axe", "name": "선왕의 도끼", "slot": "weapon", "weaponType": "axe", "element": "earth", "tier": 6,
+      "stats": { "atk": 62 }, "options": [{ "stat": "defPct", "value": 12 }, { "stat": "hpPct", "value": 10 }],
+      "unique": { "key": "react_crystallize", "value": 1.0, "desc": "결정화 보호막 +100%" } },
+
+    { "id": "lg_ancestor_shield", "name": "선조의 방패", "slot": "armor", "tier": 2,
+      "stats": { "def": 18, "res": 10, "hp": 60 }, "options": [{ "stat": "hpPct", "value": 10 }, { "stat": "defPct", "value": 10 }],
+      "unique": { "key": "tauntShield", "value": 0.15, "desc": "도발 스킬 사용 시 최대 HP 15% 보호막" } },
+    { "id": "lg_saint_rosary", "name": "성녀의 묵주", "slot": "accessory", "tier": 3,
+      "stats": { "mag": 14, "res": 10 }, "options": [{ "stat": "mpPct", "value": 15 }, { "stat": "resPct", "value": 10 }],
+      "unique": { "key": "healPct", "value": 0.3, "desc": "회복량 +30%" } },
+    { "id": "lg_wind_feather", "name": "바람의 깃털", "slot": "accessory", "tier": 4,
+      "stats": { "spd": 10, "atk": 12 }, "options": [{ "stat": "spd", "value": 6 }, { "stat": "crt", "value": 8 }],
+      "unique": { "key": "pullSelf", "value": 0.3, "desc": "행동 당기기 스킬 사용 시 자신도 30% 당김" } },
+    { "id": "lg_archmage_robe", "name": "대마법사의 로브", "slot": "armor", "tier": 5,
+      "stats": { "def": 26, "res": 40, "hp": 120, "mag": 16 }, "options": [{ "stat": "magPct", "value": 12 }, { "stat": "resPct", "value": 12 }],
+      "unique": { "key": "reactionPct", "value": 0.25, "desc": "모든 반응 피해 +25%" } },
+    { "id": "lg_king_helm", "name": "선왕의 투구", "slot": "armor", "tier": 6,
+      "stats": { "def": 48, "res": 36, "hp": 220 }, "options": [{ "stat": "hpPct", "value": 12 }, { "stat": "defPct", "value": 12 }],
+      "unique": { "key": "dmgReduce", "value": 0.1, "desc": "받는 피해 -10%" } }
+  ]
+}

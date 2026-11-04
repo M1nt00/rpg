@@ -1,0 +1,1505 @@
+[
+ {
+  "id": "r1",
+  "index": 1,
+  "name": "잿빛 평원",
+  "element": "fire",
+  "mood": "불타버린 초원",
+  "town": "잿골 마을",
+  "ally": "kyle",
+  "material": "ember_ore",
+  "levelRange": [
+   1,
+   6
+  ],
+  "pool": [
+   "ash_wolf",
+   "ember_slime",
+   "dust_beetle",
+   "void_wisp"
+  ],
+  "color": "#c8643c",
+  "wx": 14,
+  "wy": 70,
+  "introScene": "r1_intro",
+  "bossPreScene": "r1_boss_pre",
+  "bossPostScene": "r1_boss_post",
+  "nodes": [
+   {
+    "id": "r1_n0",
+    "type": "town",
+    "x": 0,
+    "y": 2,
+    "links": [
+     "r1_n1",
+     "r1_n2"
+    ],
+    "label": "잿골 마을"
+   },
+   {
+    "id": "r1_n1",
+    "type": "battle",
+    "x": 1,
+    "y": 1,
+    "links": [
+     "r1_n0",
+     "r1_n3",
+     "r1_n4"
+    ],
+    "encounter": [
+     "ash_wolf",
+     "ash_wolf"
+    ]
+   },
+   {
+    "id": "r1_n2",
+    "type": "battle",
+    "x": 1,
+    "y": 3,
+    "links": [
+     "r1_n0",
+     "r1_n4",
+     "r1_n5"
+    ],
+    "encounter": [
+     "ember_slime"
+    ]
+   },
+   {
+    "id": "r1_n3",
+    "type": "chest",
+    "x": 2,
+    "y": 0,
+    "links": [
+     "r1_n1",
+     "r1_n6"
+    ],
+    "chest": {
+     "gold": 60,
+     "items": [
+      {
+       "id": "potion",
+       "n": 2
+      }
+     ]
+    }
+   },
+   {
+    "id": "r1_n4",
+    "type": "battle",
+    "x": 2,
+    "y": 2,
+    "links": [
+     "r1_n1",
+     "r1_n2",
+     "r1_n6",
+     "r1_n7"
+    ],
+    "encounter": [
+     "ember_slime",
+     "ash_wolf"
+    ]
+   },
+   {
+    "id": "r1_n5",
+    "type": "event",
+    "x": 2,
+    "y": 4,
+    "links": [
+     "r1_n2",
+     "r1_n7"
+    ],
+    "event": "ev_traveler"
+   },
+   {
+    "id": "r1_n6",
+    "type": "battle",
+    "x": 3,
+    "y": 1,
+    "links": [
+     "r1_n3",
+     "r1_n4",
+     "r1_n8",
+     "r1_n9"
+    ],
+    "encounter": [
+     "dust_beetle",
+     "ash_wolf"
+    ]
+   },
+   {
+    "id": "r1_n7",
+    "type": "rest",
+    "x": 3,
+    "y": 3,
+    "links": [
+     "r1_n4",
+     "r1_n5",
+     "r1_n9",
+     "r1_n10"
+    ]
+   },
+   {
+    "id": "r1_n8",
+    "type": "elite",
+    "x": 4,
+    "y": 0,
+    "links": [
+     "r1_n6",
+     "r1_n11"
+    ],
+    "encounter": [
+     "fallen_captain"
+    ]
+   },
+   {
+    "id": "r1_n9",
+    "type": "event",
+    "x": 4,
+    "y": 2,
+    "links": [
+     "r1_n6",
+     "r1_n7",
+     "r1_n11",
+     "r1_n12"
+    ],
+    "event": "ev_altar"
+   },
+   {
+    "id": "r1_n10",
+    "type": "battle",
+    "x": 4,
+    "y": 4,
+    "links": [
+     "r1_n7",
+     "r1_n12"
+    ],
+    "encounter": [
+     "void_wisp",
+     "ember_slime"
+    ]
+   },
+   {
+    "id": "r1_n11",
+    "type": "battle",
+    "x": 5,
+    "y": 1,
+    "links": [
+     "r1_n8",
+     "r1_n9",
+     "r1_n13"
+    ],
+    "encounter": [
+     "dust_beetle",
+     "void_wisp",
+     "ash_wolf"
+    ]
+   },
+   {
+    "id": "r1_n12",
+    "type": "chest",
+    "x": 5,
+    "y": 3,
+    "links": [
+     "r1_n9",
+     "r1_n10",
+     "r1_n13"
+    ],
+    "chest": {
+     "gold": 40,
+     "items": [
+      {
+       "id": "stone_water",
+       "n": 2
+      }
+     ],
+     "equip": "rare"
+    }
+   },
+   {
+    "id": "r1_n13",
+    "type": "rest",
+    "x": 6,
+    "y": 2,
+    "links": [
+     "r1_n11",
+     "r1_n12",
+     "r1_n14"
+    ]
+   },
+   {
+    "id": "r1_n14",
+    "type": "boss",
+    "x": 7,
+    "y": 2,
+    "links": [
+     "r1_n13"
+    ],
+    "encounter": [
+     "ash_golem"
+    ],
+    "label": "불의 신전"
+   }
+  ]
+ },
+ {
+  "id": "r2",
+  "index": 2,
+  "name": "물안개 호수",
+  "element": "water",
+  "mood": "수상 마을, 안개 미궁",
+  "town": "안개나루",
+  "ally": "serin",
+  "material": "mist_pearl",
+  "levelRange": [
+   6,
+   11
+  ],
+  "pool": [
+   "mist_frog",
+   "lake_serpent",
+   "reed_sprite",
+   "drowned_soldier"
+  ],
+  "color": "#4a8fc8",
+  "wx": 30,
+  "wy": 40,
+  "introScene": "r2_intro",
+  "bossPreScene": "r2_boss_pre",
+  "bossPostScene": "r2_boss_post",
+  "nodes": [
+   {
+    "id": "r2_n0",
+    "type": "town",
+    "x": 0,
+    "y": 2,
+    "links": [
+     "r2_n1",
+     "r2_n2"
+    ],
+    "label": "안개나루"
+   },
+   {
+    "id": "r2_n1",
+    "type": "battle",
+    "x": 1,
+    "y": 3,
+    "links": [
+     "r2_n0",
+     "r2_n3",
+     "r2_n4"
+    ],
+    "encounter": [
+     "mist_frog",
+     "mist_frog"
+    ]
+   },
+   {
+    "id": "r2_n2",
+    "type": "battle",
+    "x": 1,
+    "y": 1,
+    "links": [
+     "r2_n0",
+     "r2_n4",
+     "r2_n5"
+    ],
+    "encounter": [
+     "lake_serpent",
+     "mist_frog"
+    ]
+   },
+   {
+    "id": "r2_n3",
+    "type": "chest",
+    "x": 2,
+    "y": 4,
+    "links": [
+     "r2_n1",
+     "r2_n6"
+    ],
+    "chest": {
+     "gold": 120,
+     "items": [
+      {
+       "id": "ether",
+       "n": 1
+      },
+      {
+       "id": "stone_lightning",
+       "n": 2
+      }
+     ]
+    }
+   },
+   {
+    "id": "r2_n4",
+    "type": "battle",
+    "x": 2,
+    "y": 2,
+    "links": [
+     "r2_n1",
+     "r2_n2",
+     "r2_n6",
+     "r2_n7"
+    ],
+    "encounter": [
+     "reed_sprite",
+     "lake_serpent"
+    ]
+   },
+   {
+    "id": "r2_n5",
+    "type": "event",
+    "x": 2,
+    "y": 0,
+    "links": [
+     "r2_n2",
+     "r2_n7"
+    ],
+    "event": "ev_spring"
+   },
+   {
+    "id": "r2_n6",
+    "type": "battle",
+    "x": 3,
+    "y": 3,
+    "links": [
+     "r2_n3",
+     "r2_n4",
+     "r2_n8",
+     "r2_n9"
+    ],
+    "encounter": [
+     "drowned_soldier",
+     "reed_sprite"
+    ]
+   },
+   {
+    "id": "r2_n7",
+    "type": "rest",
+    "x": 3,
+    "y": 1,
+    "links": [
+     "r2_n4",
+     "r2_n5",
+     "r2_n9",
+     "r2_n10"
+    ]
+   },
+   {
+    "id": "r2_n8",
+    "type": "elite",
+    "x": 4,
+    "y": 4,
+    "links": [
+     "r2_n6",
+     "r2_n11"
+    ],
+    "encounter": [
+     "mist_heretic",
+     "reed_sprite"
+    ]
+   },
+   {
+    "id": "r2_n9",
+    "type": "event",
+    "x": 4,
+    "y": 2,
+    "links": [
+     "r2_n6",
+     "r2_n7",
+     "r2_n11",
+     "r2_n12"
+    ],
+    "event": "ev_hut",
+    "label": "호숫가 오두막"
+   },
+   {
+    "id": "r2_n10",
+    "type": "battle",
+    "x": 4,
+    "y": 0,
+    "links": [
+     "r2_n7",
+     "r2_n12"
+    ],
+    "encounter": [
+     "drowned_soldier",
+     "lake_serpent",
+     "mist_frog"
+    ]
+   },
+   {
+    "id": "r2_n11",
+    "type": "battle",
+    "x": 5,
+    "y": 3,
+    "links": [
+     "r2_n8",
+     "r2_n9",
+     "r2_n13"
+    ],
+    "encounter": [
+     "reed_sprite",
+     "drowned_soldier",
+     "lake_serpent"
+    ]
+   },
+   {
+    "id": "r2_n12",
+    "type": "chest",
+    "x": 5,
+    "y": 1,
+    "links": [
+     "r2_n9",
+     "r2_n10",
+     "r2_n13"
+    ],
+    "chest": {
+     "gold": 90,
+     "items": [
+      {
+       "id": "stone_lightning",
+       "n": 2
+      }
+     ],
+     "equip": "rare"
+    }
+   },
+   {
+    "id": "r2_n13",
+    "type": "rest",
+    "x": 6,
+    "y": 2,
+    "links": [
+     "r2_n11",
+     "r2_n12",
+     "r2_n14"
+    ]
+   },
+   {
+    "id": "r2_n14",
+    "type": "boss",
+    "x": 7,
+    "y": 2,
+    "links": [
+     "r2_n13"
+    ],
+    "encounter": [
+     "lake_witch"
+    ],
+    "label": "물의 신전"
+   }
+  ]
+ },
+ {
+  "id": "r3",
+  "index": 3,
+  "name": "바람의 협곡",
+  "element": "wind",
+  "mood": "절벽 위 공중 다리",
+  "town": "구름다리 마을",
+  "ally": "arin",
+  "material": "storm_feather",
+  "levelRange": [
+   11,
+   16
+  ],
+  "pool": [
+   "cliff_harpy",
+   "rock_lizard",
+   "storm_hawk",
+   "canyon_bandit"
+  ],
+  "color": "#5fb98a",
+  "wx": 50,
+  "wy": 20,
+  "introScene": "r3_intro",
+  "bossPreScene": "r3_boss_pre",
+  "bossPostScene": "r3_boss_post",
+  "nodes": [
+   {
+    "id": "r3_n0",
+    "type": "town",
+    "x": 0,
+    "y": 2,
+    "links": [
+     "r3_n1",
+     "r3_n2"
+    ],
+    "label": "구름다리 마을"
+   },
+   {
+    "id": "r3_n1",
+    "type": "battle",
+    "x": 1,
+    "y": 1,
+    "links": [
+     "r3_n0",
+     "r3_n3",
+     "r3_n4"
+    ],
+    "encounter": [
+     "cliff_harpy",
+     "cliff_harpy"
+    ]
+   },
+   {
+    "id": "r3_n2",
+    "type": "battle",
+    "x": 1,
+    "y": 3,
+    "links": [
+     "r3_n0",
+     "r3_n4",
+     "r3_n5"
+    ],
+    "encounter": [
+     "rock_lizard",
+     "cliff_harpy"
+    ]
+   },
+   {
+    "id": "r3_n3",
+    "type": "chest",
+    "x": 2,
+    "y": 0,
+    "links": [
+     "r3_n1",
+     "r3_n6"
+    ],
+    "chest": {
+     "gold": 200,
+     "items": [
+      {
+       "id": "hipotion",
+       "n": 1
+      },
+      {
+       "id": "stone_fire",
+       "n": 2
+      }
+     ]
+    }
+   },
+   {
+    "id": "r3_n4",
+    "type": "battle",
+    "x": 2,
+    "y": 2,
+    "links": [
+     "r3_n1",
+     "r3_n2",
+     "r3_n6",
+     "r3_n7"
+    ],
+    "encounter": [
+     "storm_hawk",
+     "rock_lizard"
+    ]
+   },
+   {
+    "id": "r3_n5",
+    "type": "event",
+    "x": 2,
+    "y": 4,
+    "links": [
+     "r3_n2",
+     "r3_n7"
+    ],
+    "event": "ev_merchant"
+   },
+   {
+    "id": "r3_n6",
+    "type": "battle",
+    "x": 3,
+    "y": 1,
+    "links": [
+     "r3_n3",
+     "r3_n4",
+     "r3_n8",
+     "r3_n9"
+    ],
+    "encounter": [
+     "canyon_bandit",
+     "canyon_bandit"
+    ]
+   },
+   {
+    "id": "r3_n7",
+    "type": "rest",
+    "x": 3,
+    "y": 3,
+    "links": [
+     "r3_n4",
+     "r3_n5",
+     "r3_n9",
+     "r3_n10"
+    ]
+   },
+   {
+    "id": "r3_n8",
+    "type": "elite",
+    "x": 4,
+    "y": 0,
+    "links": [
+     "r3_n6",
+     "r3_n11"
+    ],
+    "encounter": [
+     "wind_wraith",
+     "cliff_harpy"
+    ]
+   },
+   {
+    "id": "r3_n9",
+    "type": "event",
+    "x": 4,
+    "y": 2,
+    "links": [
+     "r3_n6",
+     "r3_n7",
+     "r3_n11",
+     "r3_n12"
+    ],
+    "event": "ev_mushroom"
+   },
+   {
+    "id": "r3_n10",
+    "type": "battle",
+    "x": 4,
+    "y": 4,
+    "links": [
+     "r3_n7",
+     "r3_n12"
+    ],
+    "encounter": [
+     "storm_hawk",
+     "canyon_bandit",
+     "cliff_harpy"
+    ]
+   },
+   {
+    "id": "r3_n11",
+    "type": "battle",
+    "x": 5,
+    "y": 1,
+    "links": [
+     "r3_n8",
+     "r3_n9",
+     "r3_n13"
+    ],
+    "encounter": [
+     "rock_lizard",
+     "storm_hawk",
+     "canyon_bandit"
+    ]
+   },
+   {
+    "id": "r3_n12",
+    "type": "chest",
+    "x": 5,
+    "y": 3,
+    "links": [
+     "r3_n9",
+     "r3_n10",
+     "r3_n13"
+    ],
+    "chest": {
+     "gold": 160,
+     "items": [
+      {
+       "id": "feather",
+       "n": 1
+      }
+     ],
+     "equip": "rare"
+    }
+   },
+   {
+    "id": "r3_n13",
+    "type": "rest",
+    "x": 6,
+    "y": 2,
+    "links": [
+     "r3_n11",
+     "r3_n12",
+     "r3_n14"
+    ]
+   },
+   {
+    "id": "r3_n14",
+    "type": "boss",
+    "x": 7,
+    "y": 2,
+    "links": [
+     "r3_n13"
+    ],
+    "encounter": [
+     "storm_griffon"
+    ],
+    "label": "바람의 신전"
+   }
+  ]
+ },
+ {
+  "id": "r4",
+  "index": 4,
+  "name": "뇌운 고원",
+  "element": "lightning",
+  "mood": "폭풍 치는 고지대 유적",
+  "town": "뇌운 요새",
+  "ally": "doyun",
+  "material": "thunder_crystal",
+  "levelRange": [
+   15,
+   20
+  ],
+  "pool": [
+   "thunder_ram",
+   "ruin_sentinel",
+   "static_imp",
+   "cloud_jelly"
+  ],
+  "color": "#9a7ce0",
+  "wx": 72,
+  "wy": 30,
+  "introScene": "r4_intro",
+  "bossPreScene": "r4_boss_pre",
+  "bossPostScene": "r4_boss_post",
+  "nodes": [
+   {
+    "id": "r4_n0",
+    "type": "town",
+    "x": 0,
+    "y": 2,
+    "links": [
+     "r4_n1",
+     "r4_n2"
+    ],
+    "label": "뇌운 요새"
+   },
+   {
+    "id": "r4_n1",
+    "type": "battle",
+    "x": 1,
+    "y": 3,
+    "links": [
+     "r4_n0",
+     "r4_n3",
+     "r4_n4"
+    ],
+    "encounter": [
+     "thunder_ram",
+     "static_imp"
+    ]
+   },
+   {
+    "id": "r4_n2",
+    "type": "battle",
+    "x": 1,
+    "y": 1,
+    "links": [
+     "r4_n0",
+     "r4_n4",
+     "r4_n5"
+    ],
+    "encounter": [
+     "ruin_sentinel",
+     "thunder_ram"
+    ]
+   },
+   {
+    "id": "r4_n3",
+    "type": "chest",
+    "x": 2,
+    "y": 4,
+    "links": [
+     "r4_n1",
+     "r4_n6"
+    ],
+    "chest": {
+     "gold": 300,
+     "items": [
+      {
+       "id": "enh_stone_hi",
+       "n": 1
+      },
+      {
+       "id": "stone_earth",
+       "n": 2
+      }
+     ]
+    }
+   },
+   {
+    "id": "r4_n4",
+    "type": "battle",
+    "x": 2,
+    "y": 2,
+    "links": [
+     "r4_n1",
+     "r4_n2",
+     "r4_n6",
+     "r4_n7"
+    ],
+    "encounter": [
+     "cloud_jelly",
+     "static_imp",
+     "thunder_ram"
+    ]
+   },
+   {
+    "id": "r4_n5",
+    "type": "event",
+    "x": 2,
+    "y": 0,
+    "links": [
+     "r4_n2",
+     "r4_n7"
+    ],
+    "event": "ev_tablet"
+   },
+   {
+    "id": "r4_n6",
+    "type": "battle",
+    "x": 3,
+    "y": 3,
+    "links": [
+     "r4_n3",
+     "r4_n4",
+     "r4_n8",
+     "r4_n9"
+    ],
+    "encounter": [
+     "ruin_sentinel",
+     "cloud_jelly"
+    ]
+   },
+   {
+    "id": "r4_n7",
+    "type": "rest",
+    "x": 3,
+    "y": 1,
+    "links": [
+     "r4_n4",
+     "r4_n5",
+     "r4_n9",
+     "r4_n10"
+    ]
+   },
+   {
+    "id": "r4_n8",
+    "type": "elite",
+    "x": 4,
+    "y": 4,
+    "links": [
+     "r4_n6",
+     "r4_n11"
+    ],
+    "encounter": [
+     "rampant_doll",
+     "static_imp"
+    ]
+   },
+   {
+    "id": "r4_n9",
+    "type": "event",
+    "x": 4,
+    "y": 2,
+    "links": [
+     "r4_n6",
+     "r4_n7",
+     "r4_n11",
+     "r4_n12"
+    ],
+    "event": "ev_rift"
+   },
+   {
+    "id": "r4_n10",
+    "type": "battle",
+    "x": 4,
+    "y": 0,
+    "links": [
+     "r4_n7",
+     "r4_n12"
+    ],
+    "encounter": [
+     "thunder_ram",
+     "ruin_sentinel",
+     "static_imp"
+    ]
+   },
+   {
+    "id": "r4_n11",
+    "type": "battle",
+    "x": 5,
+    "y": 3,
+    "links": [
+     "r4_n8",
+     "r4_n9",
+     "r4_n13"
+    ],
+    "encounter": [
+     "cloud_jelly",
+     "ruin_sentinel",
+     "static_imp",
+     "thunder_ram"
+    ]
+   },
+   {
+    "id": "r4_n12",
+    "type": "chest",
+    "x": 5,
+    "y": 1,
+    "links": [
+     "r4_n9",
+     "r4_n10",
+     "r4_n13"
+    ],
+    "chest": {
+     "gold": 260,
+     "items": [
+      {
+       "id": "hipotion",
+       "n": 2
+      }
+     ],
+     "equip": "epic"
+    }
+   },
+   {
+    "id": "r4_n13",
+    "type": "rest",
+    "x": 6,
+    "y": 2,
+    "links": [
+     "r4_n11",
+     "r4_n12",
+     "r4_n14"
+    ]
+   },
+   {
+    "id": "r4_n14",
+    "type": "boss",
+    "x": 7,
+    "y": 2,
+    "links": [
+     "r4_n13"
+    ],
+    "encounter": [
+     "thunder_guardian"
+    ],
+    "label": "번개의 신전"
+   }
+  ]
+ },
+ {
+  "id": "r5",
+  "index": 5,
+  "name": "대지의 심연",
+  "element": "earth",
+  "mood": "지하 드워프 왕국",
+  "town": "돌망치 성채",
+  "ally": "bark",
+  "material": "deep_gem",
+  "levelRange": [
+   19,
+   24
+  ],
+  "pool": [
+   "deep_mole",
+   "crystal_golem",
+   "magma_worm",
+   "fallen_miner"
+  ],
+  "color": "#b08850",
+  "wx": 84,
+  "wy": 66,
+  "introScene": "r5_intro",
+  "bossPreScene": "r5_boss_pre",
+  "bossPostScene": "r5_boss_post",
+  "nodes": [
+   {
+    "id": "r5_n0",
+    "type": "town",
+    "x": 0,
+    "y": 2,
+    "links": [
+     "r5_n1",
+     "r5_n2"
+    ],
+    "label": "돌망치 성채"
+   },
+   {
+    "id": "r5_n1",
+    "type": "battle",
+    "x": 1,
+    "y": 1,
+    "links": [
+     "r5_n0",
+     "r5_n3",
+     "r5_n4"
+    ],
+    "encounter": [
+     "deep_mole",
+     "magma_worm"
+    ]
+   },
+   {
+    "id": "r5_n2",
+    "type": "battle",
+    "x": 1,
+    "y": 3,
+    "links": [
+     "r5_n0",
+     "r5_n4",
+     "r5_n5"
+    ],
+    "encounter": [
+     "crystal_golem",
+     "deep_mole"
+    ]
+   },
+   {
+    "id": "r5_n3",
+    "type": "chest",
+    "x": 2,
+    "y": 0,
+    "links": [
+     "r5_n1",
+     "r5_n6"
+    ],
+    "chest": {
+     "gold": 420,
+     "items": [
+      {
+       "id": "enh_stone_hi",
+       "n": 2
+      },
+      {
+       "id": "stone_wind",
+       "n": 2
+      }
+     ]
+    }
+   },
+   {
+    "id": "r5_n4",
+    "type": "battle",
+    "x": 2,
+    "y": 2,
+    "links": [
+     "r5_n1",
+     "r5_n2",
+     "r5_n6",
+     "r5_n7"
+    ],
+    "encounter": [
+     "fallen_miner",
+     "magma_worm",
+     "deep_mole"
+    ]
+   },
+   {
+    "id": "r5_n5",
+    "type": "event",
+    "x": 2,
+    "y": 4,
+    "links": [
+     "r5_n2",
+     "r5_n7"
+    ],
+    "event": "ev_lost_miner"
+   },
+   {
+    "id": "r5_n6",
+    "type": "battle",
+    "x": 3,
+    "y": 1,
+    "links": [
+     "r5_n3",
+     "r5_n4",
+     "r5_n8",
+     "r5_n9"
+    ],
+    "encounter": [
+     "crystal_golem",
+     "fallen_miner"
+    ]
+   },
+   {
+    "id": "r5_n7",
+    "type": "rest",
+    "x": 3,
+    "y": 3,
+    "links": [
+     "r5_n4",
+     "r5_n5",
+     "r5_n9",
+     "r5_n10"
+    ]
+   },
+   {
+    "id": "r5_n8",
+    "type": "elite",
+    "x": 4,
+    "y": 0,
+    "links": [
+     "r5_n6",
+     "r5_n11"
+    ],
+    "encounter": [
+     "traitor_general",
+     "stone_guard"
+    ]
+   },
+   {
+    "id": "r5_n9",
+    "type": "event",
+    "x": 4,
+    "y": 2,
+    "links": [
+     "r5_n6",
+     "r5_n7",
+     "r5_n11",
+     "r5_n12"
+    ],
+    "event": "ev_chest_mimic"
+   },
+   {
+    "id": "r5_n10",
+    "type": "battle",
+    "x": 4,
+    "y": 4,
+    "links": [
+     "r5_n7",
+     "r5_n12"
+    ],
+    "encounter": [
+     "magma_worm",
+     "fallen_miner",
+     "crystal_golem"
+    ],
+    "label": "무너진 갱도"
+   },
+   {
+    "id": "r5_n11",
+    "type": "battle",
+    "x": 5,
+    "y": 1,
+    "links": [
+     "r5_n8",
+     "r5_n9",
+     "r5_n13"
+    ],
+    "encounter": [
+     "deep_mole",
+     "stone_guard",
+     "fallen_miner",
+     "magma_worm"
+    ]
+   },
+   {
+    "id": "r5_n12",
+    "type": "chest",
+    "x": 5,
+    "y": 3,
+    "links": [
+     "r5_n9",
+     "r5_n10",
+     "r5_n13"
+    ],
+    "chest": {
+     "gold": 380,
+     "items": [
+      {
+       "id": "feather",
+       "n": 1
+      },
+      {
+       "id": "ether",
+       "n": 2
+      }
+     ],
+     "equip": "epic"
+    }
+   },
+   {
+    "id": "r5_n13",
+    "type": "rest",
+    "x": 6,
+    "y": 2,
+    "links": [
+     "r5_n11",
+     "r5_n12",
+     "r5_n14"
+    ]
+   },
+   {
+    "id": "r5_n14",
+    "type": "boss",
+    "x": 7,
+    "y": 2,
+    "links": [
+     "r5_n13"
+    ],
+    "encounter": [
+     "dwarf_king"
+    ],
+    "label": "대지의 신전"
+   }
+  ]
+ },
+ {
+  "id": "r6",
+  "index": 6,
+  "name": "공허의 첨탑",
+  "element": "none",
+  "mood": "색이 빠진 세계",
+  "levelRange": [
+   23,
+   28
+  ],
+  "pool": [
+   "void_hound",
+   "void_knight",
+   "void_mage",
+   "void_eye",
+   "void_flame"
+  ],
+  "color": "#8a8a96",
+  "wx": 56,
+  "wy": 62,
+  "introScene": "r6_intro",
+  "bossPreScene": "r6_boss_pre",
+  "bossPostScene": "ending",
+  "nodes": [
+   {
+    "id": "r6_n0",
+    "type": "start",
+    "x": 0,
+    "y": 2,
+    "links": [
+     "r6_n1",
+     "r6_n2"
+    ],
+    "label": "최후의 야영지"
+   },
+   {
+    "id": "r6_n1",
+    "type": "battle",
+    "x": 1,
+    "y": 3,
+    "links": [
+     "r6_n0",
+     "r6_n3",
+     "r6_n4"
+    ],
+    "encounter": [
+     "void_hound",
+     "void_flame"
+    ]
+   },
+   {
+    "id": "r6_n2",
+    "type": "battle",
+    "x": 1,
+    "y": 1,
+    "links": [
+     "r6_n0",
+     "r6_n4",
+     "r6_n5"
+    ],
+    "encounter": [
+     "void_knight",
+     "void_hound"
+    ]
+   },
+   {
+    "id": "r6_n3",
+    "type": "chest",
+    "x": 2,
+    "y": 4,
+    "links": [
+     "r6_n1",
+     "r6_n6"
+    ],
+    "chest": {
+     "gold": 500,
+     "items": [
+      {
+       "id": "hipotion",
+       "n": 2
+      },
+      {
+       "id": "feather",
+       "n": 1
+      }
+     ]
+    }
+   },
+   {
+    "id": "r6_n4",
+    "type": "battle",
+    "x": 2,
+    "y": 2,
+    "links": [
+     "r6_n1",
+     "r6_n2",
+     "r6_n6",
+     "r6_n7"
+    ],
+    "encounter": [
+     "void_mage",
+     "void_knight",
+     "void_hound"
+    ]
+   },
+   {
+    "id": "r6_n5",
+    "type": "event",
+    "x": 2,
+    "y": 0,
+    "links": [
+     "r6_n2",
+     "r6_n7"
+    ],
+    "event": "ev_rift"
+   },
+   {
+    "id": "r6_n6",
+    "type": "battle",
+    "x": 3,
+    "y": 3,
+    "links": [
+     "r6_n3",
+     "r6_n4",
+     "r6_n8",
+     "r6_n9"
+    ],
+    "encounter": [
+     "void_eye",
+     "void_flame"
+    ]
+   },
+   {
+    "id": "r6_n7",
+    "type": "rest",
+    "x": 3,
+    "y": 1,
+    "links": [
+     "r6_n4",
+     "r6_n5",
+     "r6_n9",
+     "r6_n10"
+    ]
+   },
+   {
+    "id": "r6_n8",
+    "type": "elite",
+    "x": 4,
+    "y": 4,
+    "links": [
+     "r6_n6",
+     "r6_n11"
+    ],
+    "encounter": [
+     "void_herald",
+     "void_mage"
+    ]
+   },
+   {
+    "id": "r6_n9",
+    "type": "event",
+    "x": 4,
+    "y": 2,
+    "links": [
+     "r6_n6",
+     "r6_n7",
+     "r6_n11",
+     "r6_n12"
+    ],
+    "event": "ev_memory"
+   },
+   {
+    "id": "r6_n10",
+    "type": "battle",
+    "x": 4,
+    "y": 0,
+    "links": [
+     "r6_n7",
+     "r6_n12"
+    ],
+    "encounter": [
+     "void_knight",
+     "void_eye",
+     "void_flame"
+    ]
+   },
+   {
+    "id": "r6_n11",
+    "type": "battle",
+    "x": 5,
+    "y": 3,
+    "links": [
+     "r6_n8",
+     "r6_n9",
+     "r6_n13"
+    ],
+    "encounter": [
+     "void_hound",
+     "void_mage",
+     "void_eye",
+     "void_knight"
+    ]
+   },
+   {
+    "id": "r6_n12",
+    "type": "chest",
+    "x": 5,
+    "y": 1,
+    "links": [
+     "r6_n9",
+     "r6_n10",
+     "r6_n13"
+    ],
+    "chest": {
+     "gold": 500,
+     "items": [
+      {
+       "id": "ether",
+       "n": 3
+      }
+     ],
+     "equip": "epic"
+    }
+   },
+   {
+    "id": "r6_n13",
+    "type": "rest",
+    "x": 6,
+    "y": 2,
+    "links": [
+     "r6_n11",
+     "r6_n12",
+     "r6_n14"
+    ]
+   },
+   {
+    "id": "r6_n14",
+    "type": "boss",
+    "x": 7,
+    "y": 2,
+    "links": [
+     "r6_n13"
+    ],
+    "encounter": [
+     "void_heir"
+    ],
+    "label": "첨탑 꼭대기"
+   }
+  ]
+ }
+]

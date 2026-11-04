@@ -1,0 +1,23 @@
+[
+  { "id": "q_main", "region": 0, "kind": "main", "name": "다섯 신전의 해방", "giver": "", "desc": "공허에 침묵한 다섯 원소 신전을 해방하고, 공허의 근원을 찾아라.", "target": {}, "reward": {} },
+
+  { "id": "q1_wolves", "region": 1, "kind": "kill", "name": "잿빛 늑대 소탕", "giver": "잿골 마을 촌장", "desc": "마을 가축을 노리는 잿빛 늑대를 4마리 처치해 주게.", "target": { "enemy": "ash_wolf", "count": 4 }, "reward": { "gold": 120, "exp": 40, "items": [{ "id": "potion", "n": 2 }] } },
+  { "id": "q1_ore", "region": 1, "kind": "collect", "name": "잿불 광석 수집", "giver": "대장장이 도르", "desc": "잿불 광석 3개만 구해 오면, 그걸로 강화석을 만들어 주지.", "target": { "item": "ember_ore", "count": 3 }, "reward": { "gold": 60, "items": [{ "id": "enh_stone", "n": 3 }] } },
+  { "id": "q1_kyle", "region": 1, "kind": "companion", "name": "[카일] 기사의 맹세", "giver": "카일", "desc": "공허에 삼켜진 스승, 타락한 기사단장을 쓰러뜨려 안식을 주자.", "target": { "enemy": "fallen_captain", "count": 1 }, "reward": { "legendary": "lg_ancestor_shield", "exp": 80 }, "auto": true, "requiresAlly": "kyle" },
+
+  { "id": "q2_serpent", "region": 2, "kind": "kill", "name": "호수 뱀 퇴치", "giver": "안개나루 뱃사공", "desc": "배를 뒤집는 호수 뱀 5마리를 처치해 주세요.", "target": { "enemy": "lake_serpent", "count": 5 }, "reward": { "gold": 260, "exp": 120, "items": [{ "id": "ether", "n": 2 }] } },
+  { "id": "q2_medicine", "region": 2, "kind": "deliver", "name": "약상자 배달", "giver": "안개나루 약사", "desc": "호숫가 오두막의 아픈 아이에게 약상자를 전해 주세요.", "target": { "item": "medicine_box", "node": "r2_n9" }, "giveItem": "medicine_box", "reward": { "gold": 200, "exp": 150, "items": [{ "id": "hipotion", "n": 1 }] } },
+  { "id": "q2_serin", "region": 2, "kind": "companion", "name": "[세린] 버려진 신전", "giver": "세린", "desc": "신전을 버리고 공허를 숭배하는 대사제, 안개의 이단자를 막아야 해요.", "target": { "enemy": "mist_heretic", "count": 1 }, "reward": { "legendary": "lg_saint_rosary", "exp": 200 }, "auto": true, "requiresAlly": "serin" },
+
+  { "id": "q3_feather", "region": 3, "kind": "collect", "name": "폭풍 깃털 수집", "giver": "구름다리 화살장인", "desc": "좋은 화살을 만들려면 폭풍 깃털 4개가 필요해.", "target": { "item": "storm_feather", "count": 4 }, "reward": { "gold": 380, "equip": "epic" } },
+  { "id": "q3_bandit", "region": 3, "kind": "kill", "name": "공중 다리의 도적", "giver": "구름다리 경비대장", "desc": "다리를 약탈하는 협곡 도적 4명을 소탕하라.", "target": { "enemy": "canyon_bandit", "count": 4 }, "reward": { "gold": 420, "exp": 300, "items": [{ "id": "enh_stone_hi", "n": 1 }] } },
+  { "id": "q3_arin", "region": 3, "kind": "companion", "name": "[아린] 바람의 기억", "giver": "아린", "desc": "아버지의 모습을 한 바람 망령... 내 손으로 보내 드릴게.", "target": { "enemy": "wind_wraith", "count": 1 }, "reward": { "legendary": "lg_wind_feather", "exp": 300 }, "auto": true, "requiresAlly": "arin" },
+
+  { "id": "q4_sentinel", "region": 4, "kind": "kill", "name": "유적 파수병 정지", "giver": "뇌운 요새 학자", "desc": "폭주한 유적 파수병 4기를 멈춰 주십시오.", "target": { "enemy": "ruin_sentinel", "count": 4 }, "reward": { "gold": 560, "exp": 450, "items": [{ "id": "enh_stone_hi", "n": 2 }] } },
+  { "id": "q4_crystal", "region": 4, "kind": "collect", "name": "뇌정석 연구", "giver": "뇌운 요새 학자", "desc": "공허 연구에 뇌정석 4개가 필요합니다.", "target": { "item": "thunder_crystal", "count": 4 }, "reward": { "gold": 500, "equip": "epic" } },
+  { "id": "q4_doyun", "region": 4, "kind": "companion", "name": "[도윤] 스승의 유산", "giver": "도윤", "desc": "스승님의 마도인형이 공허의 핵에 먹혔어. 내가 멈춰야 해.", "target": { "enemy": "rampant_doll", "count": 1 }, "reward": { "legendary": "lg_archmage_robe", "exp": 450 }, "auto": true, "requiresAlly": "doyun" },
+
+  { "id": "q5_letter", "region": 5, "kind": "deliver", "name": "갱도의 편지", "giver": "돌망치 성채 광부", "desc": "무너진 갱도에 갇힌 동료에게 이 편지를 전해 주게.", "target": { "item": "mine_letter", "node": "r5_n10" }, "giveItem": "mine_letter", "reward": { "gold": 700, "exp": 600, "items": [{ "id": "feather", "n": 1 }] } },
+  { "id": "q5_gem", "region": 5, "kind": "collect", "name": "심연 보석 세공", "giver": "돌망치 성채 세공사", "desc": "심연 보석 4개를 가져오면 최고의 장신구를 만들어 주마.", "target": { "item": "deep_gem", "count": 4 }, "reward": { "gold": 400, "equip": "epic" } },
+  { "id": "q5_bark", "region": 5, "kind": "companion", "name": "[바르크] 배신자의 최후", "giver": "바르크", "desc": "왕을 팔아넘긴 그롬. 그놈만큼은 내 도끼로 끝낸다.", "target": { "enemy": "traitor_general", "count": 1 }, "reward": { "legendary": "lg_king_helm", "exp": 600 }, "auto": true, "requiresAlly": "bark" }
+]

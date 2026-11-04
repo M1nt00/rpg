@@ -1,0 +1,2376 @@
+[
+ {
+  "id": "ash_wolf",
+  "name": "잿빛 늑대",
+  "region": 1,
+  "element": "wind",
+  "weakness": [
+   "fire"
+  ],
+  "level": 1,
+  "rank": "normal",
+  "stats": {
+   "hp": 45,
+   "atk": 15,
+   "mag": 15,
+   "def": 9,
+   "res": 9,
+   "spd": 99
+  },
+  "breakGauge": 3,
+  "exp": 9,
+  "gold": 9,
+  "drops": [
+   {
+    "item": "ember_ore",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_bite",
+    "weight": 70
+   },
+   {
+    "action": "e_howl",
+    "weight": 15,
+    "cond": {
+     "minTurn": 1
+    }
+   },
+   {
+    "action": "e_claw",
+    "weight": 15
+   }
+  ],
+  "shape": "beast",
+  "desc": "재를 뒤집어쓴 들개. 빠르고 무리를 짓는다."
+ },
+ {
+  "id": "ember_slime",
+  "name": "불씨 슬라임",
+  "region": 1,
+  "element": "fire",
+  "weakness": [
+   "water"
+  ],
+  "level": 2,
+  "rank": "normal",
+  "stats": {
+   "hp": 81,
+   "atk": 19,
+   "mag": 19,
+   "def": 9,
+   "res": 11,
+   "spd": 82
+  },
+  "breakGauge": 3,
+  "exp": 13,
+  "gold": 11,
+  "drops": [
+   {
+    "item": "ember_ore",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_bite",
+    "weight": 55
+   },
+   {
+    "action": "e_burn_touch",
+    "weight": 45
+   }
+  ],
+  "shape": "slime",
+  "desc": "타다 남은 불씨가 뭉친 점액. 맞으면 화상을 입는다."
+ },
+ {
+  "id": "dust_beetle",
+  "name": "먼지 딱정벌레",
+  "region": 1,
+  "element": "earth",
+  "weakness": [
+   "wind"
+  ],
+  "level": 3,
+  "rank": "normal",
+  "stats": {
+   "hp": 95,
+   "atk": 22,
+   "mag": 22,
+   "def": 20,
+   "res": 13,
+   "spd": 76
+  },
+  "breakGauge": 3,
+  "exp": 19,
+  "gold": 14,
+  "drops": [
+   {
+    "item": "ember_ore",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_slam",
+    "weight": 60
+   },
+   {
+    "action": "e_guard",
+    "weight": 25,
+    "cond": {
+     "selfHpBelow": 0.6
+    }
+   },
+   {
+    "action": "e_sunder",
+    "weight": 15
+   }
+  ],
+  "shape": "insect",
+  "desc": "단단한 껍질의 갑충. 웅크리면 공격이 잘 안 들어간다."
+ },
+ {
+  "id": "void_wisp",
+  "name": "공허 도깨비불",
+  "region": 1,
+  "element": "lightning",
+  "weakness": [
+   "earth"
+  ],
+  "level": 4,
+  "rank": "normal",
+  "stats": {
+   "hp": 88,
+   "atk": 26,
+   "mag": 31,
+   "def": 15,
+   "res": 20,
+   "spd": 90
+  },
+  "breakGauge": 3,
+  "exp": 24,
+  "gold": 16,
+  "drops": [
+   {
+    "item": "ember_ore",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_bolt",
+    "weight": 70,
+    "target": "attached"
+   },
+   {
+    "action": "e_hex",
+    "weight": 30
+   }
+  ],
+  "shape": "wisp",
+  "desc": "공허가 새어 나온 틈에서 떠도는 불빛. 원소를 갉아먹는다."
+ },
+ {
+  "id": "fallen_captain",
+  "name": "타락한 기사단장",
+  "region": 1,
+  "element": "wind",
+  "weakness": [
+   "fire"
+  ],
+  "level": 5,
+  "rank": "elite",
+  "stats": {
+   "hp": 442,
+   "atk": 35,
+   "mag": 35,
+   "def": 24,
+   "res": 20,
+   "spd": 91
+  },
+  "breakGauge": 5,
+  "exp": 120,
+  "gold": 76,
+  "drops": [
+   {
+    "item": "enh_stone_hi",
+    "chance": 1
+   },
+   {
+    "item": "enh_stone",
+    "chance": 1
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_claw",
+    "weight": 40
+   },
+   {
+    "action": "e_sweep",
+    "weight": 25
+   },
+   {
+    "action": "e_sunder",
+    "weight": 20
+   },
+   {
+    "action": "e_charge_smash",
+    "weight": 15,
+    "cond": {
+     "minTurn": 2
+    }
+   }
+  ],
+  "shape": "knight",
+  "desc": "공허에 삼켜진 불꽃 기사단의 단장. 카일의 옛 스승."
+ },
+ {
+  "id": "ash_golem",
+  "name": "잿불 골렘",
+  "region": 1,
+  "element": "fire",
+  "weakness": [
+   "water"
+  ],
+  "level": 6,
+  "rank": "boss",
+  "stats": {
+   "hp": 975,
+   "atk": 41,
+   "mag": 41,
+   "def": 28,
+   "res": 24,
+   "spd": 78
+  },
+  "breakGauge": 8,
+  "exp": 370,
+  "gold": 264,
+  "drops": [
+   {
+    "item": "enh_stone_hi",
+    "chance": 1
+   },
+   {
+    "item": "hipotion",
+    "chance": 1
+   }
+  ],
+  "ai": [
+   {
+    "action": "golem_lava",
+    "weight": 100,
+    "cond": {
+     "turnEvery": 3
+    }
+   },
+   {
+    "action": "golem_slam",
+    "weight": 55
+   },
+   {
+    "action": "golem_ember",
+    "weight": 45,
+    "target": "random"
+   }
+  ],
+  "phases": [
+   {
+    "hpBelow": 0.5,
+    "message": "골렘의 균열에서 용암이 흘러넘친다!",
+    "ai": [
+     {
+      "action": "golem_lava",
+      "weight": 100,
+      "cond": {
+       "turnEvery": 3
+      }
+     },
+     {
+      "action": "golem_slam",
+      "weight": 45
+     },
+     {
+      "action": "golem_ember",
+      "weight": 35
+     },
+     {
+      "action": "e_roar",
+      "weight": 20,
+      "cond": {
+       "minTurn": 1
+      }
+     }
+    ]
+   }
+  ],
+  "shape": "golem",
+  "desc": "불의 신전을 지키던 수호 골렘. 공허에 오염되어 폭주 중.",
+  "legendary": "lg_steam_blade"
+ },
+ {
+  "id": "mist_frog",
+  "name": "안개 두꺼비",
+  "region": 2,
+  "element": "water",
+  "weakness": [
+   "lightning"
+  ],
+  "level": 6,
+  "rank": "normal",
+  "stats": {
+   "hp": 149,
+   "atk": 32,
+   "mag": 32,
+   "def": 20,
+   "res": 20,
+   "spd": 92
+  },
+  "breakGauge": 3,
+  "exp": 37,
+  "gold": 22,
+  "drops": [
+   {
+    "item": "mist_pearl",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_bite",
+    "weight": 50
+   },
+   {
+    "action": "e_spit",
+    "weight": 30
+   },
+   {
+    "action": "e_mire",
+    "weight": 20
+   }
+  ],
+  "shape": "slime",
+  "desc": "안개를 뿜는 거대 두꺼비."
+ },
+ {
+  "id": "lake_serpent",
+  "name": "호수 뱀",
+  "region": 2,
+  "element": "water",
+  "weakness": [
+   "lightning"
+  ],
+  "level": 7,
+  "rank": "normal",
+  "stats": {
+   "hp": 153,
+   "atk": 41,
+   "mag": 36,
+   "def": 22,
+   "res": 22,
+   "spd": 97
+  },
+  "breakGauge": 3,
+  "exp": 44,
+  "gold": 24,
+  "drops": [
+   {
+    "item": "mist_pearl",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_bite",
+    "weight": 50
+   },
+   {
+    "action": "e_double",
+    "weight": 30
+   },
+   {
+    "action": "e_bolt",
+    "weight": 20
+   }
+  ],
+  "shape": "serpent",
+  "desc": "물속에서 튀어나와 휘감는다."
+ },
+ {
+  "id": "reed_sprite",
+  "name": "갈대 정령",
+  "region": 2,
+  "element": "wind",
+  "weakness": [
+   "fire"
+  ],
+  "level": 8,
+  "rank": "normal",
+  "stats": {
+   "hp": 137,
+   "atk": 39,
+   "mag": 45,
+   "def": 24,
+   "res": 24,
+   "spd": 107
+  },
+  "breakGauge": 3,
+  "exp": 51,
+  "gold": 27,
+  "drops": [
+   {
+    "item": "mist_pearl",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_bolt",
+    "weight": 55
+   },
+   {
+    "action": "e_mend",
+    "weight": 30,
+    "cond": {
+     "allyHpBelow": 0.5
+    }
+   },
+   {
+    "action": "e_shriek",
+    "weight": 15
+   }
+  ],
+  "shape": "wisp",
+  "desc": "갈대숲의 장난꾸러기 정령. 동료를 치유한다."
+ },
+ {
+  "id": "drowned_soldier",
+  "name": "익사한 병사",
+  "region": 2,
+  "element": "earth",
+  "weakness": [
+   "wind"
+  ],
+  "level": 9,
+  "rank": "normal",
+  "stats": {
+   "hp": 217,
+   "atk": 43,
+   "mag": 43,
+   "def": 34,
+   "res": 26,
+   "spd": 84
+  },
+  "breakGauge": 3,
+  "exp": 58,
+  "gold": 29,
+  "drops": [
+   {
+    "item": "mist_pearl",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_claw",
+    "weight": 50
+   },
+   {
+    "action": "e_stun_blow",
+    "weight": 30
+   },
+   {
+    "action": "e_guard",
+    "weight": 20,
+    "cond": {
+     "selfHpBelow": 0.5
+    }
+   }
+  ],
+  "shape": "humanoid",
+  "desc": "호수에 가라앉았던 옛 병사. 공허가 다시 일으켜 세웠다."
+ },
+ {
+  "id": "mist_heretic",
+  "name": "안개의 이단자",
+  "region": 2,
+  "element": "lightning",
+  "weakness": [
+   "earth"
+  ],
+  "level": 10,
+  "rank": "elite",
+  "stats": {
+   "hp": 704,
+   "atk": 55,
+   "mag": 66,
+   "def": 32,
+   "res": 39,
+   "spd": 94
+  },
+  "breakGauge": 5,
+  "exp": 264,
+  "gold": 128,
+  "drops": [
+   {
+    "item": "enh_stone_hi",
+    "chance": 1
+   },
+   {
+    "item": "enh_stone",
+    "chance": 1
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_bolt",
+    "weight": 35,
+    "target": "attached"
+   },
+   {
+    "action": "e_breath",
+    "weight": 25
+   },
+   {
+    "action": "e_hex",
+    "weight": 20
+   },
+   {
+    "action": "e_heal",
+    "weight": 20,
+    "cond": {
+     "selfHpBelow": 0.4
+    }
+   }
+  ],
+  "shape": "mage",
+  "desc": "신전을 버리고 공허를 숭배하게 된 대사제."
+ },
+ {
+  "id": "mist_clone",
+  "name": "안개 분신",
+  "region": 2,
+  "element": "water",
+  "weakness": [
+   "lightning"
+  ],
+  "level": 9,
+  "rank": "summon",
+  "stats": {
+   "hp": 102,
+   "atk": 38,
+   "mag": 38,
+   "def": 23,
+   "res": 23,
+   "spd": 93
+  },
+  "breakGauge": 2,
+  "exp": 17,
+  "gold": 6,
+  "drops": [],
+  "ai": [
+   {
+    "action": "e_bolt",
+    "weight": 70
+   },
+   {
+    "action": "witch_mist",
+    "weight": 30
+   }
+  ],
+  "reactionImmune": true,
+  "shape": "ghost",
+  "desc": "마녀의 분신. 원소 반응이 통하지 않는다."
+ },
+ {
+  "id": "lake_witch",
+  "name": "호수의 마녀",
+  "region": 2,
+  "element": "water",
+  "weakness": [
+   "lightning"
+  ],
+  "level": 11,
+  "rank": "boss",
+  "stats": {
+   "hp": 1125,
+   "atk": 62,
+   "mag": 74,
+   "def": 33,
+   "res": 42,
+   "spd": 95
+  },
+  "breakGauge": 8,
+  "exp": 740,
+  "gold": 420,
+  "drops": [
+   {
+    "item": "enh_stone_hi",
+    "chance": 1
+   },
+   {
+    "item": "hipotion",
+    "chance": 1
+   }
+  ],
+  "ai": [
+   {
+    "action": "witch_summon",
+    "weight": 100,
+    "cond": {
+     "summonsBelow": 2,
+     "minTurn": 1
+    }
+   },
+   {
+    "action": "witch_tide",
+    "weight": 100,
+    "cond": {
+     "turnEvery": 4
+    }
+   },
+   {
+    "action": "witch_lance",
+    "weight": 55,
+    "target": "attached"
+   },
+   {
+    "action": "witch_mist",
+    "weight": 20
+   }
+  ],
+  "phases": [
+   {
+    "hpBelow": 0.5,
+    "message": "마녀의 눈이 탁한 푸른빛으로 번뜩인다!",
+    "onEnter": "witch_summon",
+    "ai": [
+     {
+      "action": "witch_summon",
+      "weight": 100,
+      "cond": {
+       "summonsBelow": 2,
+       "minTurn": 1
+      }
+     },
+     {
+      "action": "witch_tide",
+      "weight": 100,
+      "cond": {
+       "turnEvery": 3
+      }
+     },
+     {
+      "action": "witch_lance",
+      "weight": 60,
+      "target": "lowestHp"
+     },
+     {
+      "action": "e_drain",
+      "weight": 25
+     }
+    ]
+   }
+  ],
+  "shape": "witch",
+  "desc": "물의 신전을 차지한 마녀. 분신 뒤에 숨는다.",
+  "legendary": "lg_mist_staff"
+ },
+ {
+  "id": "cliff_harpy",
+  "name": "절벽 하피",
+  "region": 3,
+  "element": "wind",
+  "weakness": [
+   "fire"
+  ],
+  "level": 11,
+  "rank": "normal",
+  "stats": {
+   "hp": 281,
+   "atk": 62,
+   "mag": 62,
+   "def": 30,
+   "res": 30,
+   "spd": 109
+  },
+  "breakGauge": 3,
+  "exp": 74,
+  "gold": 35,
+  "drops": [
+   {
+    "item": "storm_feather",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   },
+   {
+    "item": "enh_stone_hi",
+    "chance": 0.05
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_claw",
+    "weight": 55
+   },
+   {
+    "action": "e_shriek",
+    "weight": 20
+   },
+   {
+    "action": "e_double",
+    "weight": 25
+   }
+  ],
+  "shape": "bird",
+  "desc": "절벽에 둥지를 튼 하피. 날카로운 비명을 지른다."
+ },
+ {
+  "id": "rock_lizard",
+  "name": "바위 도마뱀",
+  "region": 3,
+  "element": "earth",
+  "weakness": [
+   "wind"
+  ],
+  "level": 12,
+  "rank": "normal",
+  "stats": {
+   "hp": 388,
+   "atk": 66,
+   "mag": 66,
+   "def": 43,
+   "res": 32,
+   "spd": 88
+  },
+  "breakGauge": 3,
+  "exp": 82,
+  "gold": 37,
+  "drops": [
+   {
+    "item": "storm_feather",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   },
+   {
+    "item": "enh_stone_hi",
+    "chance": 0.05
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_bite",
+    "weight": 55
+   },
+   {
+    "action": "e_guard",
+    "weight": 20,
+    "cond": {
+     "selfHpBelow": 0.6
+    }
+   },
+   {
+    "action": "e_sunder",
+    "weight": 25
+   }
+  ],
+  "shape": "beast",
+  "desc": "바위 틈에 숨어 사는 거대 도마뱀."
+ },
+ {
+  "id": "storm_hawk",
+  "name": "폭풍매",
+  "region": 3,
+  "element": "lightning",
+  "weakness": [
+   "earth"
+  ],
+  "level": 13,
+  "rank": "normal",
+  "stats": {
+   "hp": 308,
+   "atk": 81,
+   "mag": 70,
+   "def": 34,
+   "res": 34,
+   "spd": 115
+  },
+  "breakGauge": 3,
+  "exp": 90,
+  "gold": 40,
+  "drops": [
+   {
+    "item": "storm_feather",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   },
+   {
+    "item": "enh_stone_hi",
+    "chance": 0.05
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_claw",
+    "weight": 50
+   },
+   {
+    "action": "e_bolt",
+    "weight": 35,
+    "target": "attached"
+   },
+   {
+    "action": "e_howl",
+    "weight": 15
+   }
+  ],
+  "shape": "bird",
+  "desc": "번개를 두른 맹금."
+ },
+ {
+  "id": "canyon_bandit",
+  "name": "협곡 도적",
+  "region": 3,
+  "element": "fire",
+  "weakness": [
+   "water"
+  ],
+  "level": 14,
+  "rank": "normal",
+  "stats": {
+   "hp": 388,
+   "atk": 82,
+   "mag": 75,
+   "def": 36,
+   "res": 36,
+   "spd": 96
+  },
+  "breakGauge": 3,
+  "exp": 99,
+  "gold": 42,
+  "drops": [
+   {
+    "item": "storm_feather",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   },
+   {
+    "item": "enh_stone_hi",
+    "chance": 0.05
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_double",
+    "weight": 40,
+    "target": "lowestHp"
+   },
+   {
+    "action": "e_burn_touch",
+    "weight": 35
+   },
+   {
+    "action": "e_spit",
+    "weight": 25
+   }
+  ],
+  "shape": "humanoid",
+  "desc": "공허의 혼란을 틈타 공중 다리를 약탈하는 도적."
+ },
+ {
+  "id": "wind_wraith",
+  "name": "바람 망령",
+  "region": 3,
+  "element": "wind",
+  "weakness": [
+   "fire"
+  ],
+  "level": 15,
+  "rank": "elite",
+  "stats": {
+   "hp": 1403,
+   "atk": 95,
+   "mag": 113,
+   "def": 44,
+   "res": 44,
+   "spd": 107
+  },
+  "breakGauge": 5,
+  "exp": 428,
+  "gold": 180,
+  "drops": [
+   {
+    "item": "enh_stone_hi",
+    "chance": 1
+   },
+   {
+    "item": "enh_stone",
+    "chance": 1
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_breath",
+    "weight": 35
+   },
+   {
+    "action": "e_drain",
+    "weight": 30
+   },
+   {
+    "action": "e_shriek",
+    "weight": 15
+   },
+   {
+    "action": "e_charge_nova",
+    "weight": 20,
+    "cond": {
+     "minTurn": 2
+    }
+   }
+  ],
+  "shape": "ghost",
+  "desc": "협곡에서 떨어져 죽은 이들의 원한. 아린의 아버지의 모습을 하고 있다."
+ },
+ {
+  "id": "storm_griffon",
+  "name": "폭풍 그리폰",
+  "region": 3,
+  "element": "wind",
+  "weakness": [
+   "fire"
+  ],
+  "level": 16,
+  "rank": "boss",
+  "stats": {
+   "hp": 3500,
+   "atk": 109,
+   "mag": 104,
+   "def": 49,
+   "res": 49,
+   "spd": 107
+  },
+  "breakGauge": 8,
+  "exp": 1160,
+  "gold": 576,
+  "drops": [
+   {
+    "item": "enh_stone_hi",
+    "chance": 1
+   },
+   {
+    "item": "hipotion",
+    "chance": 1
+   }
+  ],
+  "ai": [
+   {
+    "action": "griffon_dive",
+    "weight": 100,
+    "cond": {
+     "turnEvery": 4
+    }
+   },
+   {
+    "action": "griffon_talon",
+    "weight": 55,
+    "target": "lowestHp"
+   },
+   {
+    "action": "griffon_gust",
+    "weight": 30
+   }
+  ],
+  "phases": [
+   {
+    "hpBelow": 0.5,
+    "message": "그리폰이 분노의 포효를 내지른다! 바람이 거칠어진다.",
+    "ai": [
+     {
+      "action": "griffon_dive",
+      "weight": 100,
+      "cond": {
+       "turnEvery": 3
+      }
+     },
+     {
+      "action": "griffon_talon",
+      "weight": 45,
+      "target": "lowestHp"
+     },
+     {
+      "action": "griffon_gust",
+      "weight": 35
+     },
+     {
+      "action": "e_howl",
+      "weight": 20
+     }
+    ]
+   }
+  ],
+  "actionsPerTurn": 2,
+  "shape": "griffon",
+  "desc": "바람의 신전 위를 맴도는 거대한 그리폰. 한 턴에 두 번 움직인다.",
+  "legendary": "lg_storm_bow"
+ },
+ {
+  "id": "thunder_ram",
+  "name": "뇌운 산양",
+  "region": 4,
+  "element": "lightning",
+  "weakness": [
+   "earth"
+  ],
+  "level": 15,
+  "rank": "normal",
+  "stats": {
+   "hp": 495,
+   "atk": 109,
+   "mag": 95,
+   "def": 39,
+   "res": 39,
+   "spd": 97
+  },
+  "breakGauge": 3,
+  "exp": 107,
+  "gold": 45,
+  "drops": [
+   {
+    "item": "thunder_crystal",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   },
+   {
+    "item": "enh_stone_hi",
+    "chance": 0.07
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_slam",
+    "weight": 50
+   },
+   {
+    "action": "e_stun_blow",
+    "weight": 25
+   },
+   {
+    "action": "e_bolt",
+    "weight": 25
+   }
+  ],
+  "shape": "beast",
+  "desc": "번개가 내리치는 뿔을 가진 산양."
+ },
+ {
+  "id": "ruin_sentinel",
+  "name": "유적 파수병",
+  "region": 4,
+  "element": "earth",
+  "weakness": [
+   "wind"
+  ],
+  "level": 16,
+  "rank": "normal",
+  "stats": {
+   "hp": 578,
+   "atk": 100,
+   "mag": 100,
+   "def": 57,
+   "res": 49,
+   "spd": 83
+  },
+  "breakGauge": 3,
+  "exp": 116,
+  "gold": 48,
+  "drops": [
+   {
+    "item": "thunder_crystal",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   },
+   {
+    "item": "enh_stone_hi",
+    "chance": 0.07
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_slam",
+    "weight": 50
+   },
+   {
+    "action": "e_guard",
+    "weight": 20,
+    "cond": {
+     "selfHpBelow": 0.5
+    }
+   },
+   {
+    "action": "e_charge_smash",
+    "weight": 30,
+    "cond": {
+     "minTurn": 1
+    }
+   }
+  ],
+  "shape": "golem",
+  "desc": "고대 유적을 지키는 자동 인형."
+ },
+ {
+  "id": "static_imp",
+  "name": "정전기 임프",
+  "region": 4,
+  "element": "lightning",
+  "weakness": [
+   "earth"
+  ],
+  "level": 17,
+  "rank": "normal",
+  "stats": {
+   "hp": 444,
+   "atk": 105,
+   "mag": 126,
+   "def": 43,
+   "res": 43,
+   "spd": 113
+  },
+  "breakGauge": 3,
+  "exp": 125,
+  "gold": 50,
+  "drops": [
+   {
+    "item": "thunder_crystal",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   },
+   {
+    "item": "enh_stone_hi",
+    "chance": 0.07
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_bolt",
+    "weight": 50,
+    "target": "attached"
+   },
+   {
+    "action": "e_hex",
+    "weight": 25
+   },
+   {
+    "action": "e_shriek",
+    "weight": 25
+   }
+  ],
+  "shape": "wisp",
+  "desc": "찌릿찌릿한 장난꾸러기 마물."
+ },
+ {
+  "id": "cloud_jelly",
+  "name": "구름 해파리",
+  "region": 4,
+  "element": "water",
+  "weakness": [
+   "lightning"
+  ],
+  "level": 18,
+  "rank": "normal",
+  "stats": {
+   "hp": 702,
+   "atk": 110,
+   "mag": 110,
+   "def": 45,
+   "res": 58,
+   "spd": 99
+  },
+  "breakGauge": 3,
+  "exp": 135,
+  "gold": 53,
+  "drops": [
+   {
+    "item": "thunder_crystal",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   },
+   {
+    "item": "enh_stone_hi",
+    "chance": 0.07
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_breath",
+    "weight": 35
+   },
+   {
+    "action": "e_mend",
+    "weight": 30,
+    "cond": {
+     "allyHpBelow": 0.5
+    }
+   },
+   {
+    "action": "e_mire",
+    "weight": 35
+   }
+  ],
+  "shape": "slime",
+  "desc": "하늘을 떠다니는 해파리. 동료를 치유한다."
+ },
+ {
+  "id": "rampant_doll",
+  "name": "폭주한 마도인형",
+  "region": 4,
+  "element": "fire",
+  "weakness": [
+   "water"
+  ],
+  "level": 19,
+  "rank": "elite",
+  "stats": {
+   "hp": 2091,
+   "atk": 138,
+   "mag": 165,
+   "def": 65,
+   "res": 54,
+   "spd": 99
+  },
+  "breakGauge": 5,
+  "exp": 576,
+  "gold": 220,
+  "drops": [
+   {
+    "item": "enh_stone_hi",
+    "chance": 1
+   },
+   {
+    "item": "enh_stone",
+    "chance": 1
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_burn_touch",
+    "weight": 35
+   },
+   {
+    "action": "e_breath",
+    "weight": 30
+   },
+   {
+    "action": "e_charge_nova",
+    "weight": 20,
+    "cond": {
+     "minTurn": 2
+    }
+   },
+   {
+    "action": "e_guard",
+    "weight": 15,
+    "cond": {
+     "selfHpBelow": 0.5
+    }
+   }
+  ],
+  "shape": "golem",
+  "desc": "도윤의 스승이 만든 마도인형. 공허의 핵이 박혀 있다."
+ },
+ {
+  "id": "thunder_guardian",
+  "name": "뇌신의 수호기",
+  "region": 4,
+  "element": "lightning",
+  "weakness": [
+   "earth"
+  ],
+  "level": 20,
+  "rank": "boss",
+  "stats": {
+   "hp": 5805,
+   "atk": 150,
+   "mag": 173,
+   "def": 68,
+   "res": 59,
+   "spd": 100
+  },
+  "breakGauge": 8,
+  "exp": 1530,
+  "gold": 696,
+  "drops": [
+   {
+    "item": "enh_stone_hi",
+    "chance": 1
+   },
+   {
+    "item": "hipotion",
+    "chance": 1
+   }
+  ],
+  "ai": [
+   {
+    "action": "guardian_storm",
+    "weight": 100,
+    "cond": {
+     "turnEvery": 3
+    }
+   },
+   {
+    "action": "guardian_beam",
+    "weight": 60,
+    "target": "attached"
+   },
+   {
+    "action": "e_sweep",
+    "weight": 25
+   }
+  ],
+  "phases": [
+   {
+    "hpBelow": 0.5,
+    "element": "fire",
+    "weakness": [
+     "water"
+    ],
+    "message": "수호기의 노심이 과열된다! 원소가 불로 바뀌었다 — 약점: 물",
+    "ai": [
+     {
+      "action": "guardian_meltdown",
+      "weight": 100,
+      "cond": {
+       "turnEvery": 3
+      }
+     },
+     {
+      "action": "guardian_overheat",
+      "weight": 45
+     },
+     {
+      "action": "golem_slam",
+      "weight": 40,
+      "target": "lowestHp"
+     }
+    ]
+   }
+  ],
+  "shape": "guardian",
+  "desc": "번개의 신전을 지키던 거대 수호기. 2페이즈에서 노심이 과열되어 불 원소로 변한다.",
+  "legendary": "lg_thunder_ring"
+ },
+ {
+  "id": "deep_mole",
+  "name": "심연 두더지",
+  "region": 5,
+  "element": "earth",
+  "weakness": [
+   "wind"
+  ],
+  "level": 19,
+  "rank": "normal",
+  "stats": {
+   "hp": 767,
+   "atk": 147,
+   "mag": 134,
+   "def": 47,
+   "res": 47,
+   "spd": 99
+  },
+  "breakGauge": 3,
+  "exp": 144,
+  "gold": 55,
+  "drops": [
+   {
+    "item": "deep_gem",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   },
+   {
+    "item": "enh_stone_hi",
+    "chance": 0.09
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_claw",
+    "weight": 55
+   },
+   {
+    "action": "e_sunder",
+    "weight": 25
+   },
+   {
+    "action": "e_guard",
+    "weight": 20,
+    "cond": {
+     "selfHpBelow": 0.5
+    }
+   }
+  ],
+  "shape": "beast",
+  "desc": "갱도를 파고드는 거대 두더지."
+ },
+ {
+  "id": "crystal_golem",
+  "name": "수정 골렘",
+  "region": 5,
+  "element": "earth",
+  "weakness": [
+   "wind"
+  ],
+  "level": 20,
+  "rank": "normal",
+  "stats": {
+   "hp": 877,
+   "atk": 140,
+   "mag": 140,
+   "def": 74,
+   "res": 39,
+   "spd": 80
+  },
+  "breakGauge": 3,
+  "exp": 153,
+  "gold": 58,
+  "drops": [
+   {
+    "item": "deep_gem",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   },
+   {
+    "item": "enh_stone_hi",
+    "chance": 0.09
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_slam",
+    "weight": 60
+   },
+   {
+    "action": "e_charge_smash",
+    "weight": 25,
+    "cond": {
+     "minTurn": 1
+    }
+   },
+   {
+    "action": "e_guard",
+    "weight": 15
+   }
+  ],
+  "shape": "golem",
+  "desc": "수정으로 이루어진 골렘. 마법에 약하다."
+ },
+ {
+  "id": "magma_worm",
+  "name": "용암 벌레",
+  "region": 5,
+  "element": "fire",
+  "weakness": [
+   "water"
+  ],
+  "level": 21,
+  "rank": "normal",
+  "stats": {
+   "hp": 803,
+   "atk": 146,
+   "mag": 175,
+   "def": 51,
+   "res": 51,
+   "spd": 101
+  },
+  "breakGauge": 3,
+  "exp": 163,
+  "gold": 61,
+  "drops": [
+   {
+    "item": "deep_gem",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   },
+   {
+    "item": "enh_stone_hi",
+    "chance": 0.09
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_burn_touch",
+    "weight": 45
+   },
+   {
+    "action": "e_breath",
+    "weight": 35
+   },
+   {
+    "action": "e_bite",
+    "weight": 20
+   }
+  ],
+  "shape": "insect",
+  "desc": "용암 속을 헤엄치는 벌레."
+ },
+ {
+  "id": "fallen_miner",
+  "name": "타락한 광부",
+  "region": 5,
+  "element": "lightning",
+  "weakness": [
+   "earth"
+  ],
+  "level": 22,
+  "rank": "normal",
+  "stats": {
+   "hp": 799,
+   "atk": 175,
+   "mag": 152,
+   "def": 53,
+   "res": 53,
+   "spd": 101
+  },
+  "breakGauge": 3,
+  "exp": 173,
+  "gold": 63,
+  "drops": [
+   {
+    "item": "deep_gem",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   },
+   {
+    "item": "enh_stone_hi",
+    "chance": 0.09
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_double",
+    "weight": 40
+   },
+   {
+    "action": "e_stun_blow",
+    "weight": 30
+   },
+   {
+    "action": "e_bolt",
+    "weight": 30,
+    "target": "attached"
+   }
+  ],
+  "shape": "humanoid",
+  "desc": "공허에 홀린 드워프 광부."
+ },
+ {
+  "id": "stone_guard",
+  "name": "돌 근위병",
+  "region": 5,
+  "element": "earth",
+  "weakness": [
+   "wind"
+  ],
+  "level": 21,
+  "rank": "normal",
+  "stats": {
+   "hp": 842,
+   "atk": 146,
+   "mag": 146,
+   "def": 72,
+   "res": 51,
+   "spd": 91
+  },
+  "breakGauge": 3,
+  "exp": 163,
+  "gold": 61,
+  "drops": [
+   {
+    "item": "deep_gem",
+    "chance": 0.35
+   },
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   },
+   {
+    "item": "enh_stone_hi",
+    "chance": 0.09
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_claw",
+    "weight": 50
+   },
+   {
+    "action": "e_sunder",
+    "weight": 30
+   },
+   {
+    "action": "e_guard",
+    "weight": 20
+   }
+  ],
+  "shape": "knight",
+  "desc": "드워프 왕의 근위병. 공허에 물들었다."
+ },
+ {
+  "id": "traitor_general",
+  "name": "배신자 장군 그롬",
+  "region": 5,
+  "element": "water",
+  "weakness": [
+   "lightning"
+  ],
+  "level": 23,
+  "rank": "elite",
+  "stats": {
+   "hp": 2832,
+   "atk": 218,
+   "mag": 189,
+   "def": 76,
+   "res": 64,
+   "spd": 102
+  },
+  "breakGauge": 5,
+  "exp": 732,
+  "gold": 264,
+  "drops": [
+   {
+    "item": "enh_stone_hi",
+    "chance": 1
+   },
+   {
+    "item": "enh_stone",
+    "chance": 1
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_claw",
+    "weight": 35
+   },
+   {
+    "action": "e_sweep",
+    "weight": 25
+   },
+   {
+    "action": "e_stun_blow",
+    "weight": 20
+   },
+   {
+    "action": "e_charge_smash",
+    "weight": 20,
+    "cond": {
+     "minTurn": 2
+    }
+   }
+  ],
+  "shape": "knight",
+  "desc": "왕을 공허에 팔아넘긴 장군. 바르크의 원수."
+ },
+ {
+  "id": "dwarf_king",
+  "name": "타락한 드워프 왕",
+  "region": 5,
+  "element": "earth",
+  "weakness": [
+   "wind"
+  ],
+  "level": 24,
+  "rank": "boss",
+  "stats": {
+   "hp": 6936,
+   "atk": 225,
+   "mag": 205,
+   "def": 83,
+   "res": 69,
+   "spd": 102
+  },
+  "breakGauge": 8,
+  "exp": 1930,
+  "gold": 816,
+  "drops": [
+   {
+    "item": "enh_stone_hi",
+    "chance": 1
+   },
+   {
+    "item": "hipotion",
+    "chance": 1
+   }
+  ],
+  "ai": [
+   {
+    "action": "king_barrier",
+    "weight": 100,
+    "cond": {
+     "noShield": true,
+     "turnEvery": 3
+    }
+   },
+   {
+    "action": "king_quake",
+    "weight": 100,
+    "cond": {
+     "turnEvery": 4
+    }
+   },
+   {
+    "action": "king_hammer",
+    "weight": 55,
+    "target": "attached"
+   },
+   {
+    "action": "king_rally",
+    "weight": 25,
+    "cond": {
+     "summonsBelow": 2
+    }
+   }
+  ],
+  "phases": [
+   {
+    "hpBelow": 0.5,
+    "message": "왕의 갑주가 검게 물든다. \"이 왕국은... 영원히 내 것이다!\"",
+    "onEnter": "king_barrier",
+    "ai": [
+     {
+      "action": "king_barrier",
+      "weight": 100,
+      "cond": {
+       "noShield": true,
+       "turnEvery": 2
+      }
+     },
+     {
+      "action": "king_quake",
+      "weight": 100,
+      "cond": {
+       "turnEvery": 3
+      }
+     },
+     {
+      "action": "king_hammer",
+      "weight": 55,
+      "target": "lowestHp"
+     },
+     {
+      "action": "king_rally",
+      "weight": 30,
+      "cond": {
+       "summonsBelow": 3
+      }
+     }
+    ]
+   }
+  ],
+  "shape": "king",
+  "desc": "대지의 신전을 품은 왕국의 왕. 암석 갑주를 깨야 피해가 들어간다.",
+  "legendary": "lg_king_axe"
+ },
+ {
+  "id": "void_hound",
+  "name": "공허 사냥개",
+  "region": 6,
+  "element": "wind",
+  "weakness": [
+   "fire"
+  ],
+  "level": 23,
+  "rank": "normal",
+  "stats": {
+   "hp": 882,
+   "atk": 184,
+   "mag": 167,
+   "def": 55,
+   "res": 55,
+   "spd": 117
+  },
+  "breakGauge": 3,
+  "exp": 183,
+  "gold": 66,
+  "drops": [
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   },
+   {
+    "item": "enh_stone_hi",
+    "chance": 0.11
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_bite",
+    "weight": 50,
+    "target": "attached"
+   },
+   {
+    "action": "e_double",
+    "weight": 30
+   },
+   {
+    "action": "e_howl",
+    "weight": 20
+   }
+  ],
+  "shape": "beast",
+  "desc": "색이 빠진 사냥개. 원소 냄새를 쫓는다."
+ },
+ {
+  "id": "void_knight",
+  "name": "공허 기사",
+  "region": 6,
+  "element": "earth",
+  "weakness": [
+   "wind"
+  ],
+  "level": 24,
+  "rank": "normal",
+  "stats": {
+   "hp": 1056,
+   "atk": 173,
+   "mag": 173,
+   "def": 77,
+   "res": 57,
+   "spd": 102
+  },
+  "breakGauge": 3,
+  "exp": 193,
+  "gold": 68,
+  "drops": [
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   },
+   {
+    "item": "enh_stone_hi",
+    "chance": 0.11
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_claw",
+    "weight": 45
+   },
+   {
+    "action": "e_sunder",
+    "weight": 30
+   },
+   {
+    "action": "e_charge_smash",
+    "weight": 25,
+    "cond": {
+     "minTurn": 1
+    }
+   }
+  ],
+  "shape": "knight",
+  "desc": "공허에 영혼을 판 기사."
+ },
+ {
+  "id": "void_mage",
+  "name": "공허 술사",
+  "region": 6,
+  "element": "water",
+  "weakness": [
+   "lightning"
+  ],
+  "level": 25,
+  "rank": "normal",
+  "stats": {
+   "hp": 859,
+   "atk": 179,
+   "mag": 224,
+   "def": 60,
+   "res": 71,
+   "spd": 103
+  },
+  "breakGauge": 3,
+  "exp": 203,
+  "gold": 71,
+  "drops": [
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   },
+   {
+    "item": "enh_stone_hi",
+    "chance": 0.11
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_breath",
+    "weight": 35
+   },
+   {
+    "action": "e_hex",
+    "weight": 25
+   },
+   {
+    "action": "e_drain",
+    "weight": 25
+   },
+   {
+    "action": "e_mend",
+    "weight": 15,
+    "cond": {
+     "allyHpBelow": 0.5
+    }
+   }
+  ],
+  "shape": "mage",
+  "desc": "원소를 지우는 주문을 쓴다."
+ },
+ {
+  "id": "void_eye",
+  "name": "공허의 눈",
+  "region": 6,
+  "element": "lightning",
+  "weakness": [
+   "earth"
+  ],
+  "level": 26,
+  "rank": "normal",
+  "stats": {
+   "hp": 990,
+   "atk": 186,
+   "mag": 223,
+   "def": 62,
+   "res": 62,
+   "spd": 109
+  },
+  "breakGauge": 3,
+  "exp": 213,
+  "gold": 74,
+  "drops": [
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   },
+   {
+    "item": "enh_stone_hi",
+    "chance": 0.11
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_bolt",
+    "weight": 45,
+    "target": "attached"
+   },
+   {
+    "action": "e_shriek",
+    "weight": 20
+   },
+   {
+    "action": "e_charge_nova",
+    "weight": 35,
+    "cond": {
+     "minTurn": 1
+    }
+   }
+  ],
+  "shape": "eye",
+  "desc": "모든 것을 지켜보는 눈. 큰 주문을 준비한다."
+ },
+ {
+  "id": "void_flame",
+  "name": "공허의 불꽃",
+  "region": 6,
+  "element": "fire",
+  "weakness": [
+   "water"
+  ],
+  "level": 25,
+  "rank": "normal",
+  "stats": {
+   "hp": 859,
+   "atk": 179,
+   "mag": 215,
+   "def": 60,
+   "res": 60,
+   "spd": 103
+  },
+  "breakGauge": 3,
+  "exp": 203,
+  "gold": 71,
+  "drops": [
+   {
+    "item": "enh_stone",
+    "chance": 0.22
+   },
+   {
+    "item": "potion",
+    "chance": 0.1
+   },
+   {
+    "item": "enh_stone_hi",
+    "chance": 0.11
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_burn_touch",
+    "weight": 50
+   },
+   {
+    "action": "e_breath",
+    "weight": 50
+   }
+  ],
+  "shape": "wisp",
+  "desc": "차가운 잿빛 불꽃."
+ },
+ {
+  "id": "void_herald",
+  "name": "공허의 전령",
+  "region": 6,
+  "element": "lightning",
+  "weakness": [
+   "earth"
+  ],
+  "level": 27,
+  "rank": "elite",
+  "stats": {
+   "hp": 3488,
+   "atk": 230,
+   "mag": 288,
+   "def": 73,
+   "res": 73,
+   "spd": 104
+  },
+  "breakGauge": 5,
+  "exp": 896,
+  "gold": 304,
+  "drops": [
+   {
+    "item": "enh_stone_hi",
+    "chance": 1
+   },
+   {
+    "item": "enh_stone",
+    "chance": 1
+   }
+  ],
+  "ai": [
+   {
+    "action": "e_breath",
+    "weight": 30
+   },
+   {
+    "action": "e_charge_nova",
+    "weight": 25,
+    "cond": {
+     "minTurn": 1
+    }
+   },
+   {
+    "action": "e_drain",
+    "weight": 25
+   },
+   {
+    "action": "void_silence",
+    "weight": 20
+   }
+  ],
+  "shape": "eye",
+  "desc": "옛 계승자의 말을 전하는 존재."
+ },
+ {
+  "id": "void_heir",
+  "name": "공허의 계승자 아스텔",
+  "region": 6,
+  "element": "water",
+  "weakness": [
+   "lightning"
+  ],
+  "level": 28,
+  "rank": "boss",
+  "stats": {
+   "hp": 11151,
+   "atk": 297,
+   "mag": 297,
+   "def": 87,
+   "res": 87,
+   "spd": 110
+  },
+  "breakGauge": 10,
+  "exp": 2340,
+  "gold": 948,
+  "drops": [
+   {
+    "item": "enh_stone_hi",
+    "chance": 1
+   },
+   {
+    "item": "hipotion",
+    "chance": 1
+   }
+  ],
+  "ai": [
+   {
+    "action": "void_erase",
+    "weight": 100,
+    "cond": {
+     "turnEvery": 5
+    }
+   },
+   {
+    "action": "void_mimic",
+    "weight": 35,
+    "cond": {
+     "minTurn": 1
+    }
+   },
+   {
+    "action": "void_lance",
+    "weight": 45,
+    "target": "attached"
+   },
+   {
+    "action": "void_drain",
+    "weight": 20
+   }
+  ],
+  "phases": [
+   {
+    "hpBelow": 0.66,
+    "element": "earth",
+    "weakness": [
+     "wind"
+    ],
+    "message": "아스텔의 몸이 대지의 색으로 물든다 — 약점: 바람",
+    "ai": [
+     {
+      "action": "void_erase",
+      "weight": 100,
+      "cond": {
+       "turnEvery": 4
+      }
+     },
+     {
+      "action": "void_mimic",
+      "weight": 40
+     },
+     {
+      "action": "void_lance",
+      "weight": 35,
+      "target": "attached"
+     },
+     {
+      "action": "void_silence",
+      "weight": 25
+     }
+    ]
+   },
+   {
+    "hpBelow": 0.33,
+    "element": "wind",
+    "weakness": [
+     "fire"
+    ],
+    "actionsPerTurn": 2,
+    "message": "\"이 힘은 나 하나로 충분했어!\" 아스텔이 폭주한다 — 약점: 불, 2회 행동",
+    "ai": [
+     {
+      "action": "void_erase",
+      "weight": 100,
+      "cond": {
+       "turnEvery": 4
+      }
+     },
+     {
+      "action": "void_mimic",
+      "weight": 40
+     },
+     {
+      "action": "void_lance",
+      "weight": 35,
+      "target": "lowestHp"
+     },
+     {
+      "action": "void_drain",
+      "weight": 25
+     }
+    ]
+   }
+  ],
+  "shape": "heir",
+  "desc": "원소의 힘을 독점하려다 공허가 된 옛 계승자. 페이즈마다 원소가 바뀌고, 아군의 반응을 따라 한다."
+ }
+]
